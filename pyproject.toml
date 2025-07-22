@@ -1,0 +1,15 @@
+[project]
+dependencies = []
+description = "Easily modify MCP configuration files with a simple CLI using a master list."
+license = { text = "MIT License" }
+name = "mcp-loader"
+readme = "README.md"
+requires-python = ">=3.10"
+version = "0.1.0"
+
+[project.scripts]
+add-mcp = "mcp_loader.add_keys:main"
+enable-mcp = "mcp_loader.enable_keys:main"
+load-mcp = "mcp_loader.load_keys:main"
+mcp-loader = "mcp_loader.__main__:main"
+unload-mcp = "mcp_loader.unload_keys:main"
