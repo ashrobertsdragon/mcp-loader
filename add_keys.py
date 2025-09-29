@@ -89,6 +89,7 @@ def add_keys(
 
     if dry_run:
         logger.info("Dry run complete.")
+        return
     file_utils.write_json(master_servers, file)
     logger.info(f"Successfully added {servers} into {server_key} in {file}")
 
@@ -108,3 +109,4 @@ def main(argv=None) -> None:
 
 if __name__ == "__main__":
     main()
+
