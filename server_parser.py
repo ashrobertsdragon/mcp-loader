@@ -41,7 +41,7 @@ def create_server_parser() -> argparse.ArgumentParser:
     )
 
     server_parser.add_argument(
-        "--type", choices=["stio", "sse", "http"], help="Server transport type"
+        "--type", choices=["stdio", "sse", "http"], help="Server transport type"
     )
     server_parser.add_argument(
         "--args", nargs="+", help="Arguments to pass to command/url"
@@ -154,3 +154,4 @@ def parse(args: list[str]) -> dict[str, dict[str, Any]]:
             continue
 
     return servers
+
