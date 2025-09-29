@@ -90,7 +90,7 @@ Adds new MCP server configurations to your master MCP servers file. You can defi
 ```bash
 add-mcp <master_servers_file> \
   --server SERVER_NAME_1 (--command "your_command" | --url "http://your-url.com") \
-  [--type {stio,sse,http}] \
+  [--type {stdio,sse,http}] \
   [--args "arg1" "arg2" ...] \
   [--headers "Key=Value" "Key2=Value2" ...] \
   [--env "VAR=value" "VAR2=value2" ...] \
@@ -110,7 +110,7 @@ add-mcp <master_servers_file> \
 - `--url "http://your-url.com"` (or `--http-url`): **Mutually exclusive with `--command`**. Specifies the URL to connect to a remote server. This is commonly used for HTTP/HTTPS based MCP servers.
 
 - `--type {stio,sse,http}`: (Optional) Defines the transport type for the server connection. Valid options are:
-  - `stio`: Socket.IO transport.
+  - `stdio`: Standard I/O transport.
   - `sse`: Server-Sent Events transport.
   - `http`: Standard HTTP/HTTPS transport.
 
